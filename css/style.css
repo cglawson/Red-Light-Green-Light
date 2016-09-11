@@ -1,0 +1,146 @@
+* {
+font-family: arial;
+font-size: 29px;
+}
+
+:focus {
+outline-color: transparent;
+outline-style: none;
+}
+
+#timer {
+text-align: center;
+font-size: 15rem;
+}
+
+#settings {
+display: block;
+margin-top: -12rem;
+padding-left: 0.25rem;
+text-align: left;
+}
+
+#up-down-arrow {
+position: fixed;
+left: .3rem;
+top: .3rem;
+font-size: 1.5rem;
+}
+
+#info-icon {
+position: fixed;
+right: .3rem;
+top: .3rem;
+height: 1.6rem;
+width: 1.6rem;
+}
+
+select {
+display: block;
+margin-left: 0.25rem;
+margin-right: 0.25rem;
+float: right;
+}
+
+#black-box {
+width: 9.375rem;
+height: 22.5rem;
+border-radius: 0.1875rem;
+background: #151E1E;
+display: inline-block;
+vertical-align: top;
+-webkit-box-shadow: 0rem 0.125rem 0.625rem 0rem rgba(0, 0, 0, 0.75);
+-moz-box-shadow: 0rem 0.125rem 0.625rem 0rem rgba(0, 0, 0, 0.75);
+box-shadow: 0rem 0.125rem 0.625rem 0rem rgba(0, 0, 0, 0.75);
+}
+
+#light-wrapper {
+margin-top: -2.5rem;
+}
+
+#red-light {
+width: 5.75rem;
+height: 5.75rem;
+line-height: 5.75rem;
+border: solid #440000 0.25rem;
+border-radius: 100%;
+background: #6E0000;
+color: #C00909;
+font-weight: bold;
+}
+
+#yellow-light {
+width: 5.75rem;
+height: 5.75rem;
+border: solid #5B5400 0.25rem;
+border-radius: 100%;
+background: #867C00;
+}
+
+#green-light {
+width: 5.75rem;
+height: 5.75rem;
+line-height: 5.75rem;
+border: solid #005842 0.25rem;
+border-radius: 100%;
+background: #007356;
+color: #33AE88;
+font-weight: bold;
+}
+
+#dialog {
+display: none;
+}
+
+.light-hood {
+width: 6.23rem;
+height: 3.125rem;
+margin-top: 3.4375rem;
+border-top-left-radius: 6.625rem;
+border-top-right-radius: 6.625rem;
+border: 0.4375rem solid #2B3232;
+border-bottom: 0;
+display: inline-block;
+vertical-align: top;
+-webkit-box-shadow: 0rem 0.0625rem 0.5rem 0rem rgba(0, 0, 0, 0.75);
+-moz-box-shadow: 0rem 0.0625rem 0.5rem 0px rgba(0, 0, 0, 0.75);
+box-shadow: 0rem 0.0625rem 0.5rem 0px rgba(0, 0, 0, 0.75);
+}
+
+#copyright {
+font-size: 1.6rem;
+position: fixed;
+right: .2rem;
+bottom: .1rem;
+text-decoration: none;
+}
+
+@media (width: 1336px) and (height: 768px) {
+* {font-size: 25px;
+}
+}
+
+@media (max-width: 1280px) and (min-width: 769px) {
+* {font-size: 25px;
+}
+}
+
+@media (max-width: 768px) and (min-width: 601px) {
+* {font-size: 29px;
+}
+}
+
+@media (max-width: 600px) and (min-width: 481px) {
+* {font-size: 24px;
+}
+}
+
+@media (max-width: 480px) and (min-width: 321px) {
+* {font-size: 20px;
+}
+}
+
+@media (max-width: 320px) {
+* {font-size: 16px;
+}
+}
