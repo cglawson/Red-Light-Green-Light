@@ -2,24 +2,23 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>
-        Red Light, Green Light!
-    </title>
-    <meta name="description" content="Play the classic children's game Red Light Green Light from your browser.">
-    <meta name="author" content="Caleb Lawson">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
-    <link rel="stylesheet" type="text/css" href="./css/style.css" />
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta charset="utf-8">
+  <title>
+    Red Light, Green Light!
+  </title>
+  <meta name="description" content="Play the classic children's game Red Light Green Light from your browser.">
+  <meta name="author" content="Caleb Lawson">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/jquery-ui.min.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <div id="settings">
-        <p>
-            Delay:
-            <select id="delay-start">
+  <div id="settings">
+    <p>
+      Delay:
+      <select id="delay-start">
           <option value="0">
             0 Sec
           </option>
@@ -36,10 +35,10 @@
             20 Sec
           </option>
         </select>
-        </p>
-        <p>
-            Max Red Duration:
-            <select id="red-duration-max">
+    </p>
+    <p>
+      Max Red Duration:
+      <select id="red-duration-max">
           <option value="500">
             .5 Sec
           </option>
@@ -74,10 +73,10 @@
             10 Sec
           </option>
         </select>
-        </p>
-        <p>
-            Yellow Duration:
-            <select id="yellow-duration">
+    </p>
+    <p>
+      Yellow Duration:
+      <select id="yellow-duration">
           <option value="0">
             0 Sec
           </option>
@@ -112,10 +111,10 @@
             2 Sec
           </option>
         </select>
-        </p>
-        <p>
-            Max Green Duration:
-            <select id="green-duration-max">
+    </p>
+    <p>
+      Max Green Duration:
+      <select id="green-duration-max">
           <option value="500">
             .5 Sec
           </option>
@@ -150,10 +149,10 @@
             10 Sec
           </option>
         </select>
-        </p>
-        <p>
-            Sound:
-            <select id="volume">
+    </p>
+    <p>
+      Sound:
+      <select id="volume">
                 <option value="0.0">
                    Mute
                 </option>
@@ -173,98 +172,69 @@
                    100%
                 </option>
             </select>
-        </p>
-    </div>
+    </p>
+  </div>
 
-    <div id="up-down-arrow">
-        &#9660;
-    </div>
+  <div id="up-down-arrow">
+    &#9660;
+  </div>
 
 
-    <img id="info-icon" src="/images/info_icon.svg" />
+  <img id="info-icon" src="/images/info_icon.svg" />
 
-    <div id="timer">
-    </div>
+  <div id="timer">
+  </div>
 
-    <div id="parent-wrapper" style="text-align:center; margin-top: 4em;">
-        <div id="black-box">
-            <div id="light-wrapper">
-                <div class="light-hood">
-                    <div id="red-light">
-                        stop
-                    </div>
-                </div>
-                <div class="light-hood">
-                    <div id="yellow-light">
-                    </div>
-                </div>
-                <div class="light-hood">
-                    <div id="green-light">
-                        go
-                    </div>
-                </div>
-            </div>
+  <div id="parent-wrapper" style="text-align:center; margin-top: 4em;">
+    <div id="black-box">
+      <div id="light-wrapper">
+        <div class="light-hood">
+          <div id="red-light">
+            stop
+          </div>
         </div>
-    </div>
-
-    <div id="bottom">
-    </div>
-
-    <div id="dialog" title="How To Play">
-        <p>Play Red Light Green Light with a friend! Find a long hallway or a large room. Place your phone, tablet, laptop, or other screen at the finish line.</p>
-        <p>Click on the triangle button (in the upper left corner of the screen) to view the settings. Adjust the difficulty settings and sound volume to suit the room size and age of the players. Click the triangle button again to hide the settings.</p>
-        <p>When you are ready, click the green light. &nbsp;You will later click the red light to stop the game.</p>
-        <p>Run to the opposite side of the room to the starting position.</p>
-        <ul>
-            <li>When the light is green, <em> run toward the finish line! </em></li>
-            <li>When the light is yellow, <em> slow down! </em></li>
-            <li>When the light is red, <em>stop! </em></li>
-        </ul>
-        <p>If you move when the red light is on, you have to go back to the starting line.</p>
-        <p><strong>The first to make it to the finish line wins! </strong></p>
-
-
-        <div id="paypalDonate" style="text-align: center">
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                <input type="hidden" name="cmd" value="_s-xclick">
-                <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
-">
-                <input type="image" src="/images/Paypal-Donate-Button.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" tabindex="-1">
-                <img alt="" border="0" src="//www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-            </form>
+        <div class="light-hood">
+          <div id="yellow-light">
+          </div>
         </div>
-
+        <div class="light-hood">
+          <div id="green-light">
+            go
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <a id="copyright" href="//lawson.rocks">
+  <div id="bottom">
+  </div>
+
+  <div id="dialog" title="How To Play">
+    <p>Play Red Light Green Light with a friend! Find a long hallway or a large room. Place your phone, tablet, laptop, or other screen at the finish line.</p>
+    <p>Click on the triangle button (in the upper left corner of the screen) to view the settings. Adjust the difficulty settings and sound volume to suit the room size and age of the players. Click the triangle button again to hide the settings.</p>
+    <p>When you are ready, click the green light. &nbsp;You will later click the red light to stop the game.</p>
+    <p>Run to the opposite side of the room to the starting position.</p>
+    <ul>
+      <li>When the light is green, <em> run toward the finish line! </em></li>
+      <li>When the light is yellow, <em> slow down! </em></li>
+      <li>When the light is red, <em>stop! </em></li>
+    </ul>
+    <p>If you move when the red light is on, you have to go back to the starting line.</p>
+    <p><strong>The first to make it to the finish line wins! </strong></p>
+  </div>
+
+  <a id="copyright" href="//lawson.rocks">
     	&copy
     </a>
 
-    <script>
-        var $buoop = {
-            c: 2
-        };
-
-        function $buo_f() {
-            var e = document.createElement("script");
-            e.src = "//browser-update.org/update.min.js";
-            document.body.appendChild(e);
-        };
-        try {
-            document.addEventListener("DOMContentLoaded", $buo_f, false)
-        } catch (e) {
-            window.attachEvent("onload", $buo_f)
-        }
-    </script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js">
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js">
-    </script>
-    <script> src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.0-beta6/howler.min.js">
-    </script>
-    <script type="text/javascript" src="./script.js">
-    </script>
+  <script src="js/jquery.min.js">
+  </script>
+  <script src="js/jquery-ui.min.js">
+  </script>
+  <script src="js/howler.min.js">
+  </script>
+  <script src="js/script.js">
+  </script>
 </body>
 
 </html>
